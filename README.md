@@ -12,8 +12,17 @@ It allows switching between **Stripe** and **PayPal** payment providers.
 
 ## Run (Node.js)
 
+```bash
+# Clone the repository
+git clone https://github.com/yourusername/dialoguehub.git
+cd dialoguehub/backend
+
+# Install dependencies
 npm install
+
+# run the project
 npm start
+```
 
 ## Author
 
