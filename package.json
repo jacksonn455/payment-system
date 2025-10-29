@@ -4,8 +4,9 @@
   "main": "index.js",
   "scripts": {
     "start": "ts-node src/index.ts",
-    "build": "tsc",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start:stripe": "cross-env PREFERRED_PAYMENT=stripe ts-node src/index.ts",
+    "start:paypal": "cross-env PREFERRED_PAYMENT=paypal ts-node src/index.ts",
+    "build": "tsc"
   },
   "keywords": [],
   "author": "",
@@ -13,7 +14,11 @@
   "description": "",
   "devDependencies": {
     "@types/node": "^24.9.2",
+    "cross-env": "^10.1.0",
     "ts-node": "^10.9.2",
     "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.3"
   }
 }
