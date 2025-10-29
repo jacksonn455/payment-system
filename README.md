@@ -21,7 +21,6 @@ PREFERRED_PAYMENT=paypal
 ```bash
 # Clone the repository
 git clone https://github.com/jacksonn455/payment-system.git
-cd dialoguehub/backend
 
 # Install dependencies
 npm install
