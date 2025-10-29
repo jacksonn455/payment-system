@@ -10,11 +10,11 @@ It allows switching between **Stripe** and **PayPal** payment providers.
 - Dependency Injection  
 - Strong TypeScript typing  
 
-## Run (Node.js)
+## Installation & Run (Node.js)
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/dialoguehub.git
+git clone https://github.com/jacksonn455/payment-system.git
 cd dialoguehub/backend
 
 # Install dependencies
