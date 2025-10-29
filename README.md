@@ -10,6 +10,12 @@ It allows switching between **Stripe** and **PayPal** payment providers.
 - Dependency Injection  
 - Strong TypeScript typing  
 
+## Environment Configuration
+
+```env
+PREFERRED_PAYMENT=paypal
+```
+
 ## Installation & Run (Node.js)
 
 ```bash
@@ -21,7 +27,8 @@ cd dialoguehub/backend
 npm install
 
 # run the project
-npm start
+npm run start:paypal
+npm run start:stripe
 ```
 
 ## Author
