@@ -27,6 +27,7 @@ cd dialoguehub/backend
 npm install
 
 # run the project
+npm run start  (.env)
 npm run start:paypal
 npm run start:stripe
 ```
