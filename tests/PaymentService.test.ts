@@ -18,7 +18,7 @@ describe("PaymentService", () => {
 
     expect(consoleSpy).toHaveBeenCalledWith("Starting payment process...");
     expect(chargeSpy).toHaveBeenCalledWith(150);
-    expect(consoleSpy).toHaveBeenCalledWith("✅ Payment completed successfully!");
+    expect(consoleSpy).toHaveBeenCalledWith("Payment completed successfully!");
 
     consoleSpy.mockRestore();
   });

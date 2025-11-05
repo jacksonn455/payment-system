@@ -8,7 +8,7 @@ describe("PaypalProvider", () => {
     provider.charge(200);
 
     expect(consoleSpy).toHaveBeenCalledWith(
-      "💰 Processing payment of $200 using PayPal API..."
+      "Processing payment of $200 using PayPal API..."
     );
 
     consoleSpy.mockRestore();

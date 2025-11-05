@@ -8,7 +8,7 @@ describe("StripeProvider", () => {
     provider.charge(100);
 
     expect(consoleSpy).toHaveBeenCalledWith(
-      "💳 Processing payment of $100 using Stripe API..."
+      "Processing payment of $100 using Stripe API..."
     );
 
     consoleSpy.mockRestore();
