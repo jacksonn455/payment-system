@@ -6,15 +6,19 @@
     "start": "ts-node src/index.ts",
     "start:stripe": "cross-env PREFERRED_PAYMENT=stripe ts-node src/index.ts",
     "start:paypal": "cross-env PREFERRED_PAYMENT=paypal ts-node src/index.ts",
-    "build": "tsc"
+    "build": "tsc",
+    "test": "jest"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "devDependencies": {
+    "@types/jest": "^30.0.0",
     "@types/node": "^24.9.2",
     "cross-env": "^10.1.0",
+    "jest": "^30.2.0",
+    "ts-jest": "^29.4.5",
     "ts-node": "^10.9.2",
     "typescript": "^5.9.3"
   },
