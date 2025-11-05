@@ -21,12 +21,12 @@ PREFERRED_PAYMENT=paypal
 ```bash
 # Clone the repository
 git clone https://github.com/jacksonn455/payment-system.git
-cd dialoguehub/backend
 
 # Install dependencies
 npm install
 
 # run the project
+npm run start  (.env)
 npm run start:paypal
 npm run start:stripe
 ```
