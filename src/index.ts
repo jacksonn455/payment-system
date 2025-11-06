@@ -13,15 +13,12 @@ const user: User = {
   preferredPayment: preferredPayment,
 };
 
-let provider;
-
-if (user.preferredPayment === "stripe") {
-  provider = new StripeProvider();
-} else {
-  provider = new PaypalProvider();
-}
-
 console.log(`User ${user.name} selected payment method: ${user.preferredPayment}`);
 
-const paymentService = new PaymentService(provider);
-paymentService.processPayment(150);
+const paymentService = new PaymentService();
+const providerStripe = new StripeProvider();
+const providerPaypal = new PaypalProvider();
+
+paymentService.addPaymentProvider(providerStripe);
+paymentService.addPaymentProvider(providerPaypal);
+paymentService.processPayment(150, user.preferredPayment);
